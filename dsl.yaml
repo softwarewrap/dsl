@@ -1,0 +1,18 @@
+tasks:
+
+  - name: task_0 - input
+    type: input
+    source: http://www.softwarewrap.org
+
+  - name: task_1 - summary
+    type: summary
+
+  - name: task_2 - search index
+    type: searchIndex
+    
+  - name: task_3 - search query
+    type: searchQuery
+    query: "triangle tech talks" 
+
+  - name: task_4 - log
+    type: log   

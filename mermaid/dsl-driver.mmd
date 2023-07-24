@@ -1,0 +1,5 @@
+flowchart TD
+    A(loading dsl yaml) --> B(converting dsl yaml to json)
+    B --> C(loading jsonschema)
+    C --> D(validate dsl json against jsonschema)
+    D --> E(execute dsl)

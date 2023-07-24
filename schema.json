@@ -1,0 +1,56 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Tasks",
+    "type": "object",
+    "definitions": {
+      "tasks": {
+        "type": "array",
+        "description": "Tasks",
+        "items": {
+          "description": "Tasks",
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Name of the task",
+              "minLength": 2
+            },
+            "type": {
+              "type": "string",
+              "description": "Type of task",
+              "minLength": 2
+            }
+          },
+          "required": [
+            "name",
+            "type"
+          ],
+          "anyOf": [
+            {
+              "properties": {
+                "type": {
+                  "const": "input"
+                }
+              },
+              "required": [
+                "source"
+              ]
+            },
+            {
+              "properties": {
+                "type": {
+                  "const": "searchQuery"
+                }
+              },
+              "required": [
+                "query"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "required": [
+      "tasks"
+    ]
+  }
