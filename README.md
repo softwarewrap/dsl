@@ -1,7 +1,5 @@
 # DSL
-Demo specific to yaml/json based DSLs. 
-
-* https://www.softwarewrap.org/
+Demo specific to yaml/json based Domain Specific Languages (DSL). 
 
 ## Problem
 
@@ -22,7 +20,14 @@ Execute custom DSLs driving abstracted third-party tools. Touching on the dynami
 ### Jsonschema
 
 * [schema.json](./schema.json)
-* https://json-schema.org/
+  - describes
+  - documents
+  - validates
+
+* [https://json-schema.org/](json-schema.org)
+  - validators
+  - generators
+  - linters
 
 ### DSL engine
 
@@ -54,7 +59,7 @@ Execute custom DSLs driving abstracted third-party tools. Touching on the dynami
 ### Issues addressed with proper abstracted implementations over leaky implementations
 
 * learning curve
-* hooks
+* lack of hooks
 * does too much
 * does too little
 * performance issues
@@ -73,4 +78,5 @@ Execute custom DSLs driving abstracted third-party tools. Touching on the dynami
 
 ## Contact
 
+Terry Herron 
 * https://www.linkedin.com/in/terry-herron-00649b82/
